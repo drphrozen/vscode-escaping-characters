@@ -14,16 +14,9 @@
     "keywords": [
         "octal",
         "hex",
-        "escape",
-        "unescape",
-        "encode",
-        "decode",
         "unicode",
         "entity",
-        "code point",
-        "char code",
-        "json",
-        "javascript"
+        "code point"
     ],
     "homepage": "https://github.com/drphrozen/vscode-escaping-characters",
     "repository": {
