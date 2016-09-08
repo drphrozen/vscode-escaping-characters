@@ -1,0 +1,45 @@
+{
+    "name": "escaping-characters",
+    "displayName": "escaping-characters",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "drphrozen",
+    "engines": {
+        "vscode": "^1.4.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.escapeHex",
+        "onCommand:extension.escapeOctal",
+        "onCommand:extension.escapeUnicode",
+        "onCommand:extension.escapeUnicodeES6",
+        "onCommand:extension.unescapeAll",
+        "onCommand:extension.unescapeHex",
+        "onCommand:extension.unescapeOctal",
+        "onCommand:extension.unescapeUnicode"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            { "command": "extension.escapeHex", "title": "Escape Hex (\\xXX)" },
+            { "command": "extension.escapeOctal", "title": "Escape Octal (\\###)" },
+            { "command": "extension.escapeUnicode", "title": "Escape Unicode JSON (\\uXXXX)" },
+            { "command": "extension.escapeUnicodeES6", "title": "Escape Unicode ES6 (\\u{XX-XXXXXX})"},
+            { "command": "extension.unescapeAll", "title": "Unescape All (\\xXX, \\###, \\uXXXX, \\u{X-XXXXXX})" },
+            { "command": "extension.unescapeHex", "title": "Unescape Hex (\\xXX)" },
+            { "command": "extension.unescapeOctal", "title": "Unescape Octal (\\###)" },
+            { "command": "extension.unescapeUnicode", "title": "Unescape Unicode (\\uXXXX, \\u{X-XXXXXX})" }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
+}
