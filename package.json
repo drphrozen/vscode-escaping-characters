@@ -1,15 +1,35 @@
 {
     "name": "escaping-characters",
     "displayName": "escaping-characters",
-    "description": "",
-    "version": "0.0.1",
+    "description": "This extensions adds escape/unescape methods for JavaScript special characters",
+    "version": "1.0.0",
+    "license": "MIT",
     "publisher": "drphrozen",
     "engines": {
         "vscode": "^1.4.0"
     },
     "categories": [
-        "Other"
+        "Productivity"
     ],
+    "keywords": [
+        "octal",
+        "hex",
+        "escape",
+        "unescape",
+        "encode",
+        "decode",
+        "unicode",
+        "entity",
+        "code point",
+        "char code",
+        "json",
+        "javascript"
+    ],
+    "homepage": "https://github.com/drphrozen/vscode-escaping-characters",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/drphrozen/vscode-escaping-characters.git"
+	},
     "activationEvents": [
         "onCommand:extension.escapeHex",
         "onCommand:extension.escapeOctal",
@@ -26,11 +46,11 @@
             { "command": "extension.escapeHex", "title": "Escape Hex (\\xXX)" },
             { "command": "extension.escapeOctal", "title": "Escape Octal (\\###)" },
             { "command": "extension.escapeUnicode", "title": "Escape Unicode JSON (\\uXXXX)" },
-            { "command": "extension.escapeUnicodeES6", "title": "Escape Unicode ES6 (\\u{XX-XXXXXX})"},
-            { "command": "extension.unescapeAll", "title": "Unescape All (\\xXX, \\###, \\uXXXX, \\u{X-XXXXXX})" },
+            { "command": "extension.escapeUnicodeES6", "title": "Escape Unicode ES6 (\\u{XXXXX})"},
+            { "command": "extension.unescapeAll", "title": "Unescape All (\\xXX, \\###, \\uXXXX, \\u{XXXXX})" },
             { "command": "extension.unescapeHex", "title": "Unescape Hex (\\xXX)" },
             { "command": "extension.unescapeOctal", "title": "Unescape Octal (\\###)" },
-            { "command": "extension.unescapeUnicode", "title": "Unescape Unicode (\\uXXXX, \\u{X-XXXXXX})" }
+            { "command": "extension.unescapeUnicode", "title": "Unescape Unicode (\\uXXXX, \\u{XXXXX})" }
         ]
     },
     "scripts": {
